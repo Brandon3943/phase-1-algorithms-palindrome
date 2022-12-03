@@ -1,5 +1,14 @@
+isPalindrome('hannah')
+
 function isPalindrome(word) {
   // Write your algorithm here
+  for (let i = 0, j = word.length - 1; i < word.length; i++, j--) {
+    if(word[i] !== word[j]) {
+      return false;
+    } 
+  }
+
+  return true;
 }
 
 /* 
@@ -23,3 +32,14 @@ if (require.main === module) {
 }
 
 module.exports = isPalindrome;
+
+// Rewrite the Problem in Your Own Words
+//write function that detects if strings are palaendrones.
+
+// Write Your Own Test Cases
+//racecar, panama, hannah, sushi
+// Pseudocode
+//1, loop through string 2, compare first and last characters to be T/F 3, if true continue to next charater and if false end loop and reuturn false
+// Code
+// Make It Clean and Readable
+// Optimize
